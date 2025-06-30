@@ -1,0 +1,74 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f8f9fa;
+}
+
+.tab-icon {
+    width: 24px;
+    height: 24px;
+    margin-right: 10px;
+}
+
+#image-preview img {
+    aspect-ratio: 1/1;
+    object-fit: cover;
+    width: 100%;
+    border-radius: 8px;
+}
+
+.slide-content {
+    position: absolute;
+    bottom: 20px;
+    left: 20px;
+    right: 20px;
+    padding: 20px;
+    background: rgba(0, 0, 0, 0.7);
+    color: white;
+    border-radius: 8px;
+    text-align: center;
+}
+
+.carousel-item {
+    height: 400px;
+    background-size: cover;
+    background-position: center;
+}
+
+.carousel-control-icon {
+    width: 24px;
+    height: 24px;
+}
+
+.mobile-slider .carousel-item {
+    background-size: cover;
+    background-position: center;
+    height: 300px;
+    border-radius: 8px;
+}
+
+.accordion-button {
+    background-color: #ffffff;
+    color: #333;
+}
+
+.accordion-button img {
+    width: 24px;
+    height: 24px;
+}
+
+.accordion-button:not(.collapsed)::after {
+    background-image: url('full-stack-test/files/images/minus-01.svg');
+}
+
+.accordion-button::after {
+    background-image: url('full-stack-test/files/images/plus-01.svg');
+}
+
+@media (max-width: 767px) {
+    .slide-content {
+        background: rgba(0, 0, 0, 0.8);
+    }
+    .carousel-item {
+        height: 250px;
+    }
+}
